@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&display=swap');
+*{
+  margin:0;
+  padding:0;
+  border: none;
+}
+
+/* main css */
+
+:root{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 10px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 1px;
+}
+
+.shadow{
+  max-width: 960px;
+  margin: 5rem auto;
+  border: 1px solid rgba(55,55,55,.5);
+  box-shadow: 3px 2px 15px .5px rgba(0,0,0,.5), -3px -2px 15px .5px rgba(0,0,0,.5);
+}
+
+#title{
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+#description{
+  font-size: 1.34rem;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: .5rem 0;
+}
+
+.form-input{
+  width: 25rem;  
+}
+
+.form-dropdown{
+    width: 14rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    padding-left: .2rem;
+}
+
+p{
+  font-size: 1.2rem;
+  line-height: 2.5;
+}
+
+.input-checkbox
+,.input-radio{
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+
+fieldset{
+  margin: 1rem auto;
+  padding: .3rem 1.2rem;
+}
+
+.form-input{
+  outline: none;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid rgba(55,15,35,.7);
+  background: transparent;
+}
+
+.form-input:focus{
+  border-bottom: 1px solid rgba(55,15,35,.7);
+  background: transparent;
+}
+
+{
+  padding: .5rem 1.2rem .5rem .1rem;
+  outline: none;
+}
+
+.submit-btn{
+  color: aliceblue;
+  font-weight: bold;
+  width: 25rem;
+  height: 3rem;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.4rem;
+  letter-spacing: .5px;
+  background: rgb(54, 10, 10);
+}
+
+
+
+@media (max-width: 760px){
+.shadow{
+    max-width: 100%;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
+}
+
+
+#description{
+    text-align: center;
+}
+#survey-form{
+    padding-left: 1rem;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 480px){
+    .submit-btn{
+        width: 14rem;
+    }
+    p{
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+    .form-input{
+        width: 14rem;
+    }
+}
